@@ -37,19 +37,30 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
 
+//PLAY VIDEO ON HOVER
+
+// var video = document.querySelector('.video-container video');
+
+// video.addEventListener('mouseover', function() {
+//   video.play();
+// });
+
+// video.addEventListener('mouseout', function() {
+//   video.pause();
+// });
 
 
 
 // SCROLL UP ANIMATION TO THE LANDING PAGE TOP
 
-document.addEventListener("DOMContentLoaded", function (event) {
+// document.addEventListener("DOMContentLoaded", function (event) {
 
-  // Scroll back to the top of the page with an ease-out animation when the back to top button is clicked
-  document.getElementById("back-top").addEventListener("click", function (event) {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth", duration: 2000 });
-  });
-});
+//   // Scroll back to the top of the page with an ease-out animation when the back to top button is clicked
+//   document.getElementById("back-top").addEventListener("click", function (event) {
+//     event.preventDefault();
+//     window.scrollTo({ top: 0, behavior: "smooth", duration: 2000 });
+//   });
+// });
 
 
 

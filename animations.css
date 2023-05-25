@@ -330,6 +330,7 @@ img {
 }
 
 
+
 /* previous and next project buttons at the bottom */
 .column:hover .left::before {
     visibility: visible;
