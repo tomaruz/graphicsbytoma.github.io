@@ -1,0 +1,343 @@
+/* ANIMATIONS */
+
+.fadeInBottom {
+    -webkit-animation: fadeInBottom 2s both; /* safari version 4 and up */
+    -moz-animation: fadeInBottom 2s both; /* firefox version 5 and up */
+    -o-animation: fadeInBottom 2s both; /* opera version 12 and up */
+    animation: fadeInBottom 2s both; /* explorer version 10 and up, and firefox version 29 and up */
+}
+
+.fadeInTop {
+    -webkit-animation: fadeInTop 2s both;
+    -moz-animation: fadeInTop 2s both;
+    -o-animation: fadeInTop 2s both;
+    animation: fadeInTop 2s both;
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+
+/* animate when object comes into view (javascript activated) */
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    -webkit-animation: fadeInTop 1.5s both;
+    -moz-animation: fadeInTop 1.5s both;
+    -o-animation: fadeInTop 1.5s both;
+    animation: fadeInTop 1.5s both;
+}
+
+
+/* ANIMATION KEYFRAMES */
+
+/* fade in from top down */
+
+@-webkit-keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-moz-keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+}
+
+@-o-keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* fade in from bottom up*/
+
+@-webkit-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-moz-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+}
+
+@-o-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* fade in */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* MENU ITEM UNDERLINE NOT ANIMATED */
+/* This CSS code applies an underline effect to all hyperlinks (anchor tags) on a web page. */
+
+a.underline {
+    position: relative;
+}
+
+a.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    /* the underline will span the entire width of the hyperlink */
+    height: 2.5px;
+    /* he thickness of the underline */
+    bottom: 0;
+    /* the underline will appear at the bottom of the hyperlink */
+    left: 0;
+    /* the underline will start at the left edge of the hyperlink */
+    background-color: #121212;
+    visibility: visible;
+}
+
+
+/* MENU ITEM UNDERLINE ANIMATION */
+/* This is a CSS code that adds a horizontal underline effect to a hyperlink when the mouse hovers over it. */
+
+a.left {
+    position: relative;
+}
+
+a.left::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+}
+
+a.left1 {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.left1::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.left1:hover:before {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* CLICK TO COPY TEXT WHEN HOVER ON GMAIL ADDRESS */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -60px;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+/* GALLERY IMAGE ANIMATION ON HOVER */
+
+.image-container {
+    overflow: hidden;
+    margin: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+}
+
+.image-container:hover img{
+    transform: scale(1.04);
+    /* filter: brightness(0.8); */
+}
+
+
+/* previous and next project buttons at the bottom */
+.column:hover .left::before {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+}
+
+.column:hover .image-container img {
+    transform: scale(1.04);
+    /* filter: brightness(0.8); */
+}

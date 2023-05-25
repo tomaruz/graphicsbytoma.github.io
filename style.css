@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #121212;
+}
+
+/* LANDING PAGE / GALLERY CSS */
+
+/* NAVIGATION BAR */
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    overflow: hidden;
+    order: 1;
+    padding-left: 2.5rem;
+    width: 98%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    text-align: right;
+    padding: 10px 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu-items {
+    order: 2;
+}
+
+/* The "display: none" property hides the icon so that it does not appear on the page. */
+.topnav .icon {
+    display: none;
+}
+
+
+
+/* A LINE TO SEPERATE CONTENT */
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    padding-top: 20px;
+}
+
+.line {
+    width: 98%;
+    border-bottom: 0.15rem solid;
+}
+
+
+/* LANDING PAGE HEADER */
+
+.header {
+    margin: 1rem;
+    padding-top: 15rem;
+    padding-left: 1.5rem;
+    padding-bottom: 25rem;
+    width: 80%;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+/* PROJECT GALLERY */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.column {
+    align-items: center;
+}
+
+#col1 {
+    flex: 50%;
+}
+
+#col2 {
+    flex: 50%;
+    margin-top: 20%; /* to create an offset */
+}
+
+.title {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.flex-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* FOOTER */
+
+.footer-menu {
+    margin-top: 1rem;
+    overflow: hidden;
+    margin-right: 2.5rem;
+}
+
+/* project and info bottom menu styling */
+.footer-menu a {
+    float: right;
+    padding: 10px 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* footer container excludes the seperation line and the navigation bar */
+.footer-container {
+    margin: 1rem;
+    padding-left: 1.5rem;
+    width: 98%;
+    height: 30vw;
+}
+
+.footer-container h1 {
+    font-size: 4rem;
+}
+
+.footer-text {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 80%;
+}
+
+.contact-container {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.funky-arrow-right {
+    margin-right: 1.5rem;
+    width: 13rem;
+}
+
+.email-container {
+    padding-top: 1.8rem;
+    justify-content: center;
+    display: flex;
+    align-items: center; /* center child elements vertically */
+    justify-content: center; /* center child elements horizontally */
+}
+
+.email-container h2 {
+    font-size: 3rem;
+    width: 100%;
+}
+
+.footer-smallprint {
+    padding-top: 12vw;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.mynametag {
+    font-size: 1rem;
+    order: 1; /* move the mynametag div to the left */
+}
+
+.footer-smallprint p {
+    font-size: 1rem;
+    order: 2; /* move the p tag to the right */
+}
+
+
+
+/* INFO PAGE STYLING */
+
+.about-me-container {
+    padding-top: 6rem;
+    padding-left: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.about-me-title h1 {
+    width: 50%;
+    line-height: normal;
+    font-size: 3vw;
+    padding-bottom: 3rem;
+}
+
+
+.about-me-container2 {
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+
+.more-about-me {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.column1 {
+    align-items: center;
+}
+
+#col3 {
+    flex: 25%;
+}
+
+#col4 {
+    flex: 25%;
+}
+
+
+.about-me-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.column1 {
+    align-items: center;
+}
+
+#col5 {
+    flex: 50%;
+}
+
+#col6 {
+    flex: 20%;
+}
+
+#col7 {
+    flex: 20%;
+}
+
+
+/* PROJECT NAV TOP BAR */
+
+.project-nav-top {
+    display: flex;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    justify-content: space-between;
+    width: 98%;
+
+}
+
+.arrow-left {
+    margin-right: 1.5rem;
+    width: 5rem;
+}
+
+.previous-project {
+    display: flex;
+    align-items: center;
+    /* center child elements vertically */
+    justify-content: center;
+    /* center child elements horizontally */
+
+    order: 1;
+}
+
+.arrow-right {
+    width: 5rem;
+    margin-left: 1.5rem;
+}
+
+.next-project {
+    display: flex;
+    align-items: center;
+    /* center child elements vertically */
+    justify-content: center;
+    /* center child elements horizontally */
+    order: 2;
+}
+
+
+/* PROJECT TITLE */
+
+.project-title {
+    padding-left: 2.5rem;
+    padding-top: 8rem;
+    padding-bottom: 2.5rem;
+}
+
+
+/* ABOUT PROJECT */
+.about-project {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6.5rem;
+    width: 85%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+#col8 {
+    flex: 40%;
+}
+
+#col9 {
+    flex: 40%;
+}
+
+
+
+.about-project2 {
+    width: 80%;
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.column2 {
+    flex-direction: row;
+}
+
+#col10 {
+    flex: 10%;
+
+}
+
+#col11 {
+    flex: 10%;
+}
+
+
+/* BOTTOM NAV WITH IMAGES */
+
+#gallery1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+
+.withimage {
+    display: flex;
+    padding-left: 2.5rem;
+}
+
+.withimagenext {
+    display: flex; 
+    justify-content: flex-end; 
+    padding-right: 2.5rem;
+}
+
