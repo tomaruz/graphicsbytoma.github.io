@@ -124,7 +124,45 @@ emailContainer.addEventListener("mouseout", function() {
 });
 
 
+//VIDEO PLAYER UNMUTE/SOUND ON
 
+document.addEventListener('DOMContentLoaded', function() {
+  var videoPlayer = document.getElementById('videoPlayer');
+  var muteIcon = document.getElementById('muteIcon');
+  
+  // Function to handle the click event on the video element
+  function handleVideoClick() {
+    if (videoPlayer.muted) {
+      videoPlayer.muted = false; // Unmute the video
+      muteIcon.style.backgroundImage = "url('images/sound-icon.png')"; // Replace with the path to your unmute icon image
+    } else {
+      videoPlayer.muted = true; // Mute the video
+      muteIcon.style.backgroundImage = "url('images/mute-icon.jpeg')"; // Replace with the path to your mute icon image
+    }
+  }
+  
+  // Add a click event listener to the video element
+  videoPlayer.addEventListener('click', handleVideoClick);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var videoPlayer1 = document.getElementById('videoPlayer1');
+  var muteIcon = document.getElementById('muteIcon');
+  
+  // Function to handle the click event on the video element
+  function handleVideoClick() {
+    if (videoPlayer1.muted) {
+      videoPlayer1.muted = false; // Unmute the video
+      muteIcon.style.backgroundImage = "url('images/sound-icon.png')"; // Replace with the path to your unmute icon image
+    } else {
+      videoPlayer1.muted = true; // Mute the video
+      muteIcon.style.backgroundImage = "url('images/mute-icon.jpeg')"; // Replace with the path to your mute icon image
+    }
+  }
+  
+  // Add a click event listener to the video element
+  videoPlayer1.addEventListener('click', handleVideoClick);
+});
 
 
 

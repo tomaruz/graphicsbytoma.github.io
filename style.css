@@ -391,3 +391,16 @@ h3 {
     padding-right: 2.5rem;
 }
 
+/* MUTE ICON FOR VIDEOS */
+
+.mute-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('images/mute-icon.jpeg'); /* Replace with the path to your mute icon image */
+    background-size: cover;
+    cursor: pointer;
+background-color: aqua;
+  }
