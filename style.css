@@ -10,7 +10,14 @@
 
 /* NAVIGATION BAR */
 
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .topnav {
+    /* position: sticky;
+    top: 2rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +26,7 @@
     order: 1;
     padding-left: 2.5rem;
     width: 98%;
+    padding-right: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -29,7 +37,7 @@
     padding: 10px 10px;
     margin-left: 15px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .menu-items {
@@ -45,7 +53,7 @@
 
 /* A LINE TO SEPERATE CONTENT */
 
-.line-container {
+/* .line-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +64,7 @@
 .line {
     width: 98%;
     border-bottom: 0.15rem solid;
-}
+} */
 
 
 /* LANDING PAGE HEADER */
@@ -123,7 +131,7 @@ p {
 /* FOOTER */
 
 .footer-menu {
-    margin-top: 1rem;
+    margin-top: 3rem;
     overflow: hidden;
     margin-right: 2.5rem;
 }
@@ -143,6 +151,7 @@ p {
     padding-left: 1.5rem;
     width: 98%;
     height: 30vw;
+    margin-top: 10rem;
 }
 
 .footer-container h1 {
