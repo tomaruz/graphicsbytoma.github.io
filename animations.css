@@ -195,7 +195,7 @@ a.underline::before {
     position: absolute;
     width: 100%;
     /* the underline will span the entire width of the hyperlink */
-    height: 2.5px;
+    height: 2px;
     /* he thickness of the underline */
     bottom: 0;
     /* the underline will appear at the bottom of the hyperlink */
@@ -217,7 +217,7 @@ a.left::before {
     content: '';
     position: absolute;
     width: 0;
-    height: 2.5px;
+    height: 2px;
     bottom: 0;
     left: 0;
     background-color: #121212;
@@ -242,7 +242,7 @@ a.left1::before {
     content: '';
     position: absolute;
     width: 0;
-    height: 4px;
+    height: 3px;
     bottom: 0;
     left: 0;
     background-color: #121212;
@@ -325,7 +325,7 @@ a.left1:hover:before {
 }
 
 .image-container:hover .flex-image{
-    transform: scale(1.04);
+    transform: scale(1.05);
 }
 
 

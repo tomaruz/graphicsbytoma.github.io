@@ -15,6 +15,16 @@ function myFunction() {
 }
 
 
+//INSERTING A FOOTER TO EVERY PAGE
+
+document.addEventListener("DOMContentLoaded", function() {
+  var footerPlaceholder = document.getElementById('footer-placeholder');
+  fetch('footer.html')
+      .then(response => response.text())
+      .then(content => {
+          footerPlaceholder.innerHTML = content;
+      });
+});
 
 
 // GALLERY FADE IN ANIMATION
@@ -53,14 +63,14 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // SCROLL UP ANIMATION TO THE LANDING PAGE TOP
 
-// document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 
-//   // Scroll back to the top of the page with an ease-out animation when the back to top button is clicked
-//   document.getElementById("back-top").addEventListener("click", function (event) {
-//     event.preventDefault();
-//     window.scrollTo({ top: 0, behavior: "smooth", duration: 2000 });
-//   });
-// });
+  // Scroll back to the top of the page with an ease-out animation when the back to top button is clicked
+  document.getElementById("back-top").addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth", duration: 2000 });
+  });
+});
 
 
 
